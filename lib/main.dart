@@ -8,10 +8,20 @@ class Gooey extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "Hi Mom",
+      theme: ThemeData(
+        primaryColor: Colors.white,
+      ),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(
-          child: GooeyCarousel(),
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(100.0),
+          child: AppBar(
+            title: Text("Hi Mom"),
+          ),
+        ),
+        body: Container(
+            child: GooeyCarousel(),
         ),
       ),
     );
