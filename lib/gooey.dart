@@ -32,7 +32,7 @@ class GooeyCarouselState extends State<GooeyCarousel> with SingleTickerProviderS
   void initState() {
     _edge = GooeyEdge(count: 25);
     _ticker = createTicker(_tick)..start();
-    _blueImage = Image.network('https://firebasestorage.googleapis.com/v0/b/vgv-flutter-vignettes.appspot.com/o/gooey_edge%2FIllustration-Blue.png?alt=media&token=7a55c1fc-0cb1-4f98-bafd-81780cd42775',);
+    _blueImage = Image(image: AssetImage('graphics/Blue-Image.png'));
     _redImage = Image(image: AssetImage('graphics/Red-Image.png'));
     _yellowImage = Image(image: AssetImage('graphics/Yellow-Image.png'));
     _blueBg = Image.network(

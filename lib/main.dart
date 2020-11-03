@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'dart:math';
+import 'package:youtube_player_iframe/youtube_player_iframe.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 part 'gooey.dart';
+part 'about.dart';
 
 void main() => runApp(HomePage());
 
@@ -10,7 +13,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Hi Mom",
+      title: "Mehek Box",
       theme: ThemeData(
         primaryColor: Colors.white,
       ),
@@ -36,48 +39,7 @@ class LandingPage extends StatelessWidget{
   }
 }
 
-class AboutPage extends StatelessWidget{
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: MyAppBar(),
-      body: ListView (
-        children: <Widget>[
-          Container(
-            height: 500,
-            color: Colors.amber[600],
-            child: const Center(child: Text('Entry A')),
-          ),
-          Container(
-            height: 500,
-            color: Colors.amber[500],
-            child: const Center(child: Text('Entry B')),
-          ),
-          Container(
-            height: 500,
-            color: Colors.amber[400],
-            child: const Center(child: Text('Entry C')),
-          ),
-          Container(
-            height: 500,
-            color: Colors.amber[300],
-            child: const Center(child: Text('Entry C')),
-          ),
-          Container(
-            height: 500,
-            color: Colors.amber[200],
-            child: const Center(child: Text('Entry C')),
-          ),
-          Container(
-            height: 500,
-            color: Colors.amber[100],
-            child: const Center(child: Text('Entry C')),
-          ),
-        ],
-      ),
-    );
-  }
-}
+
 
 Function navigate(BuildContext context, String path) {
   return () {
@@ -109,17 +71,18 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
               ButtonBar (
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    new RaisedButton(
+                    new FlatButton(
+
                       child: new Text('About'),
                       onPressed: navigate(context, '/about'),
                     ),
-                    new RaisedButton(
-                      child: new Text('Media'),
-                      onPressed: null,
-                    ),
-                    new RaisedButton(
+//                    new RaisedButton(
+//                      child: new Text('Media'),
+//                      onPressed: null,
+//                    ),
+                    new FlatButton(
                       child: new Text('App'),
-                      onPressed: null,
+                      onPressed: _launchURL,
                     ),
                   ]
               ),
@@ -141,3 +104,12 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
 }
 
 
+
+_launchURL() async {
+  const url = 'https://app.mehekbox.com/#/measure';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
