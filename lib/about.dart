@@ -15,6 +15,7 @@ YoutubePlayerController _controller = YoutubePlayerController(
 class AboutPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: MyAppBar(),
       body: ListView (
@@ -22,10 +23,14 @@ class AboutPage extends StatelessWidget{
           Container(
             height: 500,
             color: Colors.amber[800],
-            child: const Center(
+            child: Center(
                 child: Text(
                   'About the Mehek Box',
-                  style: TextStyle(fontFamily: 'Northwest', fontSize: 150, color: Colors.white),
+                  style: TextStyle(
+                      fontFamily: 'Northwest',
+                      fontSize: width * 0.1,
+                      color: Colors.white
+                  ),
                 )
             ),
           ),
