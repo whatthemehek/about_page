@@ -27677,7 +27677,7 @@ u0:function(a){return this.b.Nj(a,this.c)},
 uE:function(a){return!0}}
 F.wz.prototype={
 J:function(a,b){var s=X.a08(null,C.j)
-return new S.pk(P.aQ(["/",new F.Jt(),"/about",new F.Ju()],t.Q,t.gd),"/about","Mehek Box",s,!1,null)}}
+return new S.pk(P.aQ(["/",new F.Jt(),"/about",new F.Ju()],t.Q,t.gd),"/","Mehek Box",s,!1,null)}}
 F.Jt.prototype={
 $1:function(a){return new F.ls(null)},
 $S:327}
