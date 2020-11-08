@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
         primaryColor: Colors.white,
       ),
       debugShowCheckedModeBanner: false,
-      initialRoute: "/",
+      initialRoute: "/about",
       routes: {
         '/': (context) => LandingPage(),
         '/about': (context) => AboutPage(),
