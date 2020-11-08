@@ -3,12 +3,13 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "848c7a90150c94f0a5e2604376666a1e",
+  "assets/AssetManifest.json": "cbb8b3037075fac54fe7ba814cfa190f",
 "assets/FontManifest.json": "437a77069c6619d372c9a9fea46119ee",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "assets/fonts/Pacific-Northwest-Rough.ttf": "f4d034a68dd32b73a0d195f2d6677702",
 "assets/graphics/Blue-Image.png": "11ef57a25ca8080465f7ff10e9947a85",
 "assets/graphics/Headshot.jpg": "7844075b5d9fc111e7d5b4286b2f5cd4",
+"assets/graphics/Mehek-Box-Icon.jpeg": "17855cb332f16bb84c0854d32d728023",
 "assets/graphics/Red-Image.png": "f9fd8a47ac5303be6cc0c180d358f8c4",
 "assets/graphics/Title-Image.JPG": "289764f06512be45d4fb258694e2e9f3",
 "assets/graphics/Title-Logo-Resized.png": "661f5d479e8e208eaf3a4ff943aac51c",
@@ -19,10 +20,10 @@ const RESOURCES = {
 "assets/packages/flutter_inappwebview/t_rex_runner/t-rex.css": "5a8d0222407e388155d7d1395a75d5b9",
 "assets/packages/flutter_inappwebview/t_rex_runner/t-rex.html": "16911fcc170c8af1c5457940bd0bf055",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "56af46cdd440810af39e231acb75b620",
-"/": "56af46cdd440810af39e231acb75b620",
+"icons/Icon-192.png": "37d7a9079d8a19c6a80ecc3bb5828f00",
+"icons/Icon-512.png": "4e7d1a74f614d8a76f5f7ee5fd77b4b4",
+"index.html": "1fcf6100e0148987ceb98491cf4b28a8",
+"/": "1fcf6100e0148987ceb98491cf4b28a8",
 "main.dart.js": "90719385a268149a037ab6824663438d",
 "manifest.json": "3c6143e6ed2238126b3bb2227837ed18"
 };
