@@ -3,11 +3,16 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "cbb8b3037075fac54fe7ba814cfa190f",
-"assets/FontManifest.json": "437a77069c6619d372c9a9fea46119ee",
+  "assets/AssetManifest.json": "92c4f821f266699b15a6cd98e704c9eb",
+"assets/FontManifest.json": "bdee00e386ed94edbe6b1154823cc4cd",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "assets/fonts/Pacific-Northwest-Rough.ttf": "f4d034a68dd32b73a0d195f2d6677702",
+"assets/fonts/times.ttf": "3f7dc90a1651b35e69718bbf38ed265a",
+"assets/fonts/timesbd.ttf": "54e5495b1fa1fcb0958134a536546201",
+"assets/fonts/timesbi.ttf": "53d9fc19eb63be2e53db3c5b2116ce98",
+"assets/fonts/timesi.ttf": "9d7cd9dcba718421261104b35bac94a1",
 "assets/graphics/Blue-Image.png": "11ef57a25ca8080465f7ff10e9947a85",
+"assets/graphics/Box-Diagram.png": "701e8f222eeea3621bd96b6957a7823d",
 "assets/graphics/Headshot.jpg": "7844075b5d9fc111e7d5b4286b2f5cd4",
 "assets/graphics/Mehek-Box-Icon.jpeg": "17855cb332f16bb84c0854d32d728023",
 "assets/graphics/Red-Image.png": "f9fd8a47ac5303be6cc0c180d358f8c4",
@@ -22,9 +27,9 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "37d7a9079d8a19c6a80ecc3bb5828f00",
 "icons/Icon-512.png": "4e7d1a74f614d8a76f5f7ee5fd77b4b4",
-"index.html": "1fcf6100e0148987ceb98491cf4b28a8",
-"/": "1fcf6100e0148987ceb98491cf4b28a8",
-"main.dart.js": "90719385a268149a037ab6824663438d",
+"index.html": "9192b1a506d5c3bb1bbc24bd1747b98c",
+"/": "9192b1a506d5c3bb1bbc24bd1747b98c",
+"main.dart.js": "da26942136c40fa5c4b46a4925344210",
 "manifest.json": "3c6143e6ed2238126b3bb2227837ed18"
 };
 

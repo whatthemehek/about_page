@@ -6,6 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 part 'gooey.dart';
 part 'about.dart';
+part 'mystory.dart';
 
 void main() => runApp(HomePage());
 
@@ -22,6 +23,7 @@ class HomePage extends StatelessWidget {
       routes: {
         '/': (context) => LandingPage(),
         '/about': (context) => AboutPage(),
+        '/mystory': (context) => MyStoryPage(),
       }
     );
   }
@@ -71,18 +73,41 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
               ButtonBar (
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    new FlatButton(
-
+                    FlatButton(
                       child: new Text('About'),
                       onPressed: navigate(context, '/about'),
                     ),
-//                    new RaisedButton(
-//                      child: new Text('Media'),
-//                      onPressed: null,
-//                    ),
-                    new FlatButton(
-                      child: new Text('App'),
+                    FlatButton(
+                      child: Text('My Story'),
+                      onPressed: navigate(context, '/mystory'),
+                    ),
+                    RaisedButton(
                       onPressed: _launchURL,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                      padding: const EdgeInsets.all(0.0),
+                      child: Ink(
+                        decoration: const BoxDecoration(
+                          gradient:LinearGradient(
+                            colors: <Color>[
+                              Color(0xFF0D47A1),
+                              Color(0xFF1976D2),
+                              Color(0xFF42A5F5),
+                            ],
+                          ),
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        ),
+                        child: Container(
+                          constraints: const BoxConstraints(minWidth: 88.0, minHeight: 36.0), // min sizes for Material buttons
+                          alignment: Alignment.center,
+                          child: const Text(
+                            'App',
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ),
                     ),
                   ]
               ),
@@ -90,6 +115,7 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
           ),
         ],
       ),
+      // Shadow under App Bar
       decoration: BoxDecoration(
         boxShadow: <BoxShadow>[
           BoxShadow(
