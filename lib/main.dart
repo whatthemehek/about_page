@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'dart:math';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:gooey_carousel/gooey_carrousel.dart';
@@ -49,7 +47,32 @@ class LandingPage extends StatelessWidget{
                     fit: BoxFit.cover,
                   ),
                 ),
-                child: Image(image: AssetImage("graphics/Red-Image.png")),
+                child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Container(
+                          height: height*0.8,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Container(
+                                width: width*0.05,
+                                child: Image(image: AssetImage("graphics/Swipe-L.png")),
+                              ),
+                              Image(image: AssetImage("graphics/Red-Image.png")),
+                              Container(
+                                width: width*0.05,
+                                child: Image(image: AssetImage("graphics/Swipe-R.png")),
+                              ),
+                            ]
+                          )
+                      ),
+                      Container(
+                        height: height*0.05,
+                        child: Image(image: AssetImage("graphics/Slide-One.png")),
+                      )
+                    ],
+                ),
             ),
             Container(
                 width: width,
@@ -60,7 +83,32 @@ class LandingPage extends StatelessWidget{
                     fit: BoxFit.cover,
                   ),
                 ),
-                child: Image(image: AssetImage("graphics/Blue-Image.png")),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                      height: height*0.8,
+                      child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              width: width*0.05,
+                              child: Image(image: AssetImage("graphics/Swipe-L.png")),
+                            ),
+                            Image(image: AssetImage("graphics/Blue-Image.png")),
+                            Container(
+                              width: width*0.05,
+                              child: Image(image: AssetImage("graphics/Swipe-R.png")),
+                            ),
+                          ]
+                      )
+                  ),
+                  Container(
+                    height: height*0.05,
+                    child: Image(image: AssetImage("graphics/Slide-Two.png")),
+                  )
+                ],
+              ),
             ),
             Container(
                 width: width,
@@ -71,7 +119,32 @@ class LandingPage extends StatelessWidget{
                     fit: BoxFit.cover,
                   ),
                 ),
-                child: Image(image: AssetImage("graphics/Yellow-Image.png")),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                      height: height*0.8,
+                      child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              width: width*0.05,
+                              child: Image(image: AssetImage("graphics/Swipe-L.png")),
+                            ),
+                            Image(image: AssetImage("graphics/Yellow-Image.png")),
+                            Container(
+                              width: width*0.05,
+                              child: Image(image: AssetImage("graphics/Swipe-R.png")),
+                            ),
+                          ]
+                      )
+                  ),
+                  Container(
+                    height: height*0.05,
+                    child: Image(image: AssetImage("graphics/Slide-Three.png")),
+                  )
+                ],
+              ),
             ),
           ],
         ),
