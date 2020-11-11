@@ -1,8 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'dart:math';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:gooey_carousel/gooey_carrousel.dart';
 
 part 'gooey.dart';
 part 'about.dart';
@@ -32,16 +34,49 @@ class HomePage extends StatelessWidget {
 class LandingPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: MyAppBar(),
       body: Container(
-        child: GooeyCarousel(),
+        child: GooeyCarousel(
+          children: <Widget>[
+            Container(
+                width: width,
+                decoration: new BoxDecoration(
+                  image: new DecorationImage(
+                    image: AssetImage("graphics/Bg-Red.png"),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                child: Image(image: AssetImage("graphics/Red-Image.png")),
+            ),
+            Container(
+                width: width,
+                decoration: new BoxDecoration(
+                  image: new DecorationImage(
+                    image: AssetImage("graphics/Bg-Blue.png"),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                child: Image(image: AssetImage("graphics/Blue-Image.png")),
+            ),
+            Container(
+                width: width,
+                decoration: new BoxDecoration(
+                  image: new DecorationImage(
+                    image: AssetImage("graphics/Bg-Yellow.png"),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                child: Image(image: AssetImage("graphics/Yellow-Image.png")),
+            ),
+          ],
+        ),
       ),
     );
   }
 }
-
-
 
 Function navigate(BuildContext context, String path) {
   return () {

@@ -46,7 +46,6 @@ class MyStoryPage extends StatelessWidget{
             ),
           ),
           Container(
-              height: 500,
               color: Colors.amber[400],
               child: Padding (
                   padding: const EdgeInsets.symmetric(vertical: 16.0),

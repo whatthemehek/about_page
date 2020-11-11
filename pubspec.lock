@@ -93,6 +93,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  gooey_carousel:
+    dependency: "direct main"
+    description:
+      name: gooey_carousel
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.2"
   matcher:
     dependency: transitive
     description:
