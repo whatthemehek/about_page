@@ -6,7 +6,6 @@ import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:gooey_carousel/gooey_carrousel.dart';
 
-part 'gooey.dart';
 part 'about.dart';
 part 'mystory.dart';
 
@@ -43,6 +42,7 @@ class LandingPage extends StatelessWidget{
           children: <Widget>[
             Container(
                 width: width,
+                height: height,
                 decoration: new BoxDecoration(
                   image: new DecorationImage(
                     image: AssetImage("graphics/Bg-Red.png"),
@@ -53,6 +53,7 @@ class LandingPage extends StatelessWidget{
             ),
             Container(
                 width: width,
+                height: height,
                 decoration: new BoxDecoration(
                   image: new DecorationImage(
                     image: AssetImage("graphics/Bg-Blue.png"),
@@ -63,6 +64,7 @@ class LandingPage extends StatelessWidget{
             ),
             Container(
                 width: width,
+                height: height,
                 decoration: new BoxDecoration(
                   image: new DecorationImage(
                     image: AssetImage("graphics/Bg-Yellow.png"),

@@ -27399,14 +27399,12 @@ F.JE.prototype={
 $1:function(a){return new F.lF(null)},
 $S:296}
 F.lq.prototype={
-K:function(a,b){var s,r,q,p=null,o=F.bI(b,!1).a.a
-F.bI(b,!1).toString
-s=X.WW(C.is,new L.dk("graphics/Bg-Red.png"))
-s=M.c_(p,U.oR(p,new L.dk("graphics/Red-Image.png")),p,p,new S.cH(p,s,p,p,p,p,C.I),p,p,p,o)
-r=X.WW(C.is,new L.dk("graphics/Bg-Blue.png"))
-r=M.c_(p,U.oR(p,new L.dk("graphics/Blue-Image.png")),p,p,new S.cH(p,r,p,p,p,p,C.I),p,p,p,o)
-q=X.WW(C.is,new L.dk("graphics/Bg-Yellow.png"))
-return M.XG(new F.lE(p),M.c_(p,new X.oJ(H.d([s,r,M.c_(p,U.oR(p,new L.dk("graphics/Yellow-Image.png")),p,p,new S.cH(p,q,p,p,p,p,C.I),p,p,p,o)],t.t),p),p,p,p,p,p,p,p))}}
+K:function(a,b){var s,r,q=null,p=F.bI(b,!1).a.a,o=F.bI(b,!1).a.b,n=X.WW(C.is,new L.dk("graphics/Bg-Red.png"))
+n=M.c_(q,U.oR(q,new L.dk("graphics/Red-Image.png")),q,q,new S.cH(q,n,q,q,q,q,C.I),o,q,q,p)
+s=X.WW(C.is,new L.dk("graphics/Bg-Blue.png"))
+s=M.c_(q,U.oR(q,new L.dk("graphics/Blue-Image.png")),q,q,new S.cH(q,s,q,q,q,q,C.I),o,q,q,p)
+r=X.WW(C.is,new L.dk("graphics/Bg-Yellow.png"))
+return M.XG(new F.lE(q),M.c_(q,new X.oJ(H.d([n,s,M.c_(q,U.oR(q,new L.dk("graphics/Yellow-Image.png")),q,q,new S.cH(q,r,q,q,q,q,C.I),o,q,q,p)],t.t),q),q,q,q,q,q,q,q))}}
 F.Wi.prototype={
 $0:function(){K.Xs(this.a).BE(this.b,null,t._)},
 $C:"$0",
