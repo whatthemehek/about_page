@@ -4,8 +4,10 @@ import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:gooey_carousel/gooey_carrousel.dart';
 
-part 'about.dart';
-part 'mystory.dart';
+part 'who.dart';
+part 'where.dart';
+part 'what.dart';
+part 'why.dart';
 
 void main() => runApp(HomePage());
 
@@ -21,8 +23,10 @@ class HomePage extends StatelessWidget {
       initialRoute: "/",
       routes: {
         '/': (context) => LandingPage(),
-        '/about': (context) => AboutPage(),
-        '/mystory': (context) => MyStoryPage(),
+        '/who': (context) => WhoPage(),
+        '/what': (context) => WhatPage(),
+        '/where': (context) => WherePage(),
+        '/why': (context) => WhyPage(),
       }
     );
   }
@@ -184,12 +188,20 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
                     FlatButton(
-                      child: new Text('About'),
-                      onPressed: navigate(context, '/about'),
+                      child: new Text('WHO'),
+                      onPressed: navigate(context, '/who'),
                     ),
                     FlatButton(
-                      child: Text('My Story'),
-                      onPressed: navigate(context, '/mystory'),
+                      child: Text('WHAT'),
+                      onPressed: navigate(context, '/what'),
+                    ),
+                    FlatButton(
+                      child: Text('WHERE'),
+                      onPressed: navigate(context, '/where'),
+                    ),
+                    FlatButton(
+                      child: Text('WHY'),
+                      onPressed: navigate(context, '/why'),
                     ),
                     RaisedButton(
                       onPressed: _launchURL,
@@ -210,7 +222,7 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
                           constraints: const BoxConstraints(minWidth: 88.0, minHeight: 36.0), // min sizes for Material buttons
                           alignment: Alignment.center,
                           child: const Text(
-                            'App',
+                            'APP',
                             style: TextStyle(
                               color: Colors.white,
                             ),
