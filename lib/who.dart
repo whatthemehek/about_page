@@ -11,7 +11,7 @@ class WhoPage extends StatelessWidget{
       body: ListView (
         children: <Widget>[
           Container(
-            height: 500,
+            height: 300,
             color: Colors.amber[800],
             child: Center(
                 child: Text(
@@ -45,7 +45,6 @@ class WhoPage extends StatelessWidget{
                                 "I am a high school senior at the Overlake School, interested in technology, product design, and software development! I have a passion for universal design, especially in the field of music education, which led me to develop my innovative tool, the Mehek Box. I'm also active in social justice work at Overlake, leading the IMPACT Club to write anti-racism webinars, push for curriculum reform, and bring a focus on cultural competency into faculty hiring. I hope to continue working on socially-conscious, design-forward projects, and keep learning! ",
                                 textAlign: TextAlign.left,
                                 style: TextStyle(
-                                  fontWeight: FontWeight.bold,
                                   fontSize: 16,
                                 ),
                               ),

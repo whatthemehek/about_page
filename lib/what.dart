@@ -9,7 +9,7 @@ class WhatPage extends StatelessWidget{
       body: ListView (
         children: <Widget>[
           Container(
-            height: 500,
+            height: 300,
             color: Colors.amber[800],
             child: Center(
                 child: Text(
@@ -57,7 +57,6 @@ class WhatPage extends StatelessWidget{
                                     "\n\nWhen the pandemic left music teachers asking hard questions about how to shift online, I realized the box and I might be able to give them an answer. I had seen my product help students actively engage and learn in my own choir. If I could create a virtual version, I could help dozens of choirs struggling to redesign their programs. So in the past 6 months, I’ve developed an app and web version of the tool, which you can check out by clicking the App button above, or searching Mehek Box on the Google Play store.",
                                 textAlign: TextAlign.left,
                                 style: TextStyle(
-                                  fontWeight: FontWeight.bold,
                                   fontSize: 16,
                                 ),
                               ),

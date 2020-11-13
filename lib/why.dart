@@ -21,7 +21,7 @@ class WhyPage extends StatelessWidget{
       body: ListView (
         children: <Widget>[
           Container(
-            height: 500,
+            height: 300,
             color: Colors.amber[800],
             child: Center(
                 child: Text(
@@ -50,14 +50,14 @@ class WhyPage extends StatelessWidget{
               child: Padding (
                   padding: const EdgeInsets.all(16.0),
                   child: Center (
-                      child: Row(
+                      child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             Text(
                               "Our Mission",
                               style: TextStyle(
                                   fontFamily: 'Northwest',
-                                  fontSize: width * 0.08,
+                                  fontSize: width * 0.06,
                                   color: Colors.white
                               ),
                             ),
@@ -71,8 +71,7 @@ class WhyPage extends StatelessWidget{
                                     "\n\n5. To center the perspectives and expertise of my users in product design, especially when designing for users with disabilities",
                                 textAlign: TextAlign.left,
                                 style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20,
+                                  fontSize: 16,
                                 ),
                               ),
                             )
