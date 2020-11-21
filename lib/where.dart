@@ -1,7 +1,7 @@
 part of 'main.dart';
 
 final List<String> names = <String>["Leah Crews, General Music Teacher", "Rebecca Gobel, Adaptive Music Teacher", "Bryonna Koppenhaver, Adaptive Music Teacher"];
-final List<String> pictures = <String>['graphics/L-Crews.jpg', 'graphics/R-Gobel.jpg', 'graphics/unnamed.png'];
+final List<String> pictures = <String>['graphics/L-Crews.jpg', 'graphics/R-Gobel.jpg', 'graphics/B-Koppenhaver.JPG'];
 final List<String> quotes = <String>[
   "I have really enjoyed working with the Mehek Box. This is a great way for students to visually and aurally present rhythms to their students. The students enjoy manipulating rhythms and showing different durations with the boxes. It is a really great way to help them learn!",
   "Mehek is a brilliant upcoming entrepreneur. This is an amazing product to me. Our students can CREATE rhythmic patterns based on their current level to PRACTICE and PERFORM.",
@@ -80,7 +80,7 @@ class WherePage extends StatelessWidget{
                       Text(names[index]),
                       Image(
                           image: AssetImage(pictures[index]),
-                          width:width*0.15,
+                          width: width*0.15,
                           fit: BoxFit.fill,
                       ),
                       Text("\""+quotes[index]+"\""),

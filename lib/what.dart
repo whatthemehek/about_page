@@ -1,5 +1,15 @@
 part of 'main.dart';
 
+YoutubePlayerController _controller = YoutubePlayerController(
+  initialVideoId: 'PqXyXdxV1Es',
+  params: YoutubePlayerParams(
+    autoPlay: false,
+    startAt: Duration(seconds: 0),
+    showControls: true,
+    showFullscreenButton: true,
+  ),
+);
+
 class WhatPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -32,22 +42,9 @@ class WhatPage extends StatelessWidget{
                           children: [
                             SizedBox(
                               width: width*0.4,
-                              child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      "",
-                                      style: TextStyle(
-                                          fontFamily: 'Northwest',
-                                          fontSize: width * 0.04,
-                                          color: Colors.white
-                                      ),
-                                    ),
-                                    Image(
-                                      image: AssetImage('graphics/Box-Diagram.png'),
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ]
+                              child: Image(
+                                image: AssetImage('graphics/Box-Diagram.png'),
+                                fit: BoxFit.fill,
                               ),
                             ),
                             Container (
@@ -65,6 +62,17 @@ class WhatPage extends StatelessWidget{
                       )
                   )
               )
+          ),
+          Container(
+            height: 500,
+            color: Colors.amber[400],
+            child: Padding (
+              padding: EdgeInsets.all(16.0),
+              child: YoutubePlayerIFrame(
+                controller: _controller,
+                aspectRatio: 16 / 9,
+              ),
+            ),
           ),
 //          Container(
 //            height: 500,

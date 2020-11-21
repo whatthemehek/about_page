@@ -6,6 +6,7 @@ class WhoPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: MyAppBar(),
       body: ListView (
@@ -54,11 +55,92 @@ class WhoPage extends StatelessWidget{
                   )
               )
           ),
-
-//          Container(
-//            height: 500,
-//            color: Colors.amber[300],
-//            child: const Center(child: Text('Entry C')),
+          Container(
+              color: Colors.amber[400],
+              child: Padding (
+                  padding: const EdgeInsets.symmetric(vertical: 16.0),
+                  child: Center (
+                      child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Text(
+                                "My Mentors",
+                                style: TextStyle(
+                                    fontFamily: 'Northwest',
+                                    fontSize: width * 0.06,
+                                    color: Colors.white
+                                ),
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                Container(
+                                  width: 0.4*width,
+                                  child: Column(
+                                    children: [
+                                      Text(
+                                          "Joseph Crnko",
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                          ),
+                                      ),
+                                      SizedBox(height: height*0.05),
+                                      SizedBox(
+                                        height: height*0.4,
+                                        child: Image(
+                                          image: AssetImage("graphics/J-Crnko.jpg"),
+                                          fit: BoxFit.fill,
+                                        ),
+                                      ),
+                                      SizedBox(height: height*0.05),
+                                      Text(
+                                          "Seattle Symphony Choral Director, NWChoirs Director",
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                          ),
+                                      )
+                                    ]
+                                  ),
+                                ),
+                                Container(
+                                  width: 0.4*width,
+                                  child: Column(
+                                      children: [
+                                        Text(
+                                            "Kim McCord",
+                                            style: TextStyle(
+                                              fontSize: 16,
+                                            ),
+                                        ),
+                                        SizedBox(height: height*0.05),
+                                        SizedBox(
+                                          height: height*0.4,
+                                          child: Image(
+                                            image: AssetImage("graphics/K-McCord.jpg"),
+                                            fit: BoxFit.fill,
+                                          ),
+                                        ),
+                                        SizedBox(height: height*0.05),
+                                        Text(
+                                            "Professor Emeritus of music education, ISME Board Member, Founder of NAFME Special Research Interest Group on Children with Exceptionalities",
+                                            style: TextStyle(
+                                              fontSize: 16,
+                                            ),
+                                        )
+                                      ]
+                                  ),
+                                )
+                              ]
+                            ),
+                          ]
+                      )
+                  )
+              )
+          ),
+////          Container(
+////            height: 500,
+////            color: Colors.amber[300],
+////            child: const Center(child: Text('Entry C')),
 //          ),
 //          Container(
 //            height: 500,
