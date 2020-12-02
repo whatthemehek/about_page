@@ -1,5 +1,8 @@
 part of 'main.dart';
 
+final List<String> screenshots = <String>['graphics/Screenshot-1.png', 'graphics/Screenshot-2.png'];
+
+
 YoutubePlayerController _controller = YoutubePlayerController(
   initialVideoId: 'PqXyXdxV1Es',
   params: YoutubePlayerParams(
@@ -74,11 +77,49 @@ class WhatPage extends StatelessWidget{
               ),
             ),
           ),
-//          Container(
-//            height: 500,
-//            color: Colors.amber[300],
-//            child: const Center(child: Text('Entry C')),
-//          ),
+          Container(
+              color: Colors.amber[300],
+              child: Column (
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Text(
+                    "The Mehek Box In Action",
+                    style: TextStyle(
+                        fontFamily: 'Northwest',
+                        fontSize: width * 0.06,
+                        color: Colors.white
+                    ),
+                  ),
+                  SizedBox(
+                    height: 500,
+                    child: ListView.separated (
+                      scrollDirection: Axis.horizontal,
+                      padding: const EdgeInsets.all(8),
+                      itemCount: screenshots.length,
+                      itemBuilder: (BuildContext context, int index) {
+                        return SizedBox(
+                          width: width*0.6,
+                          child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                Image(
+                                  image: AssetImage(screenshots[index]),
+                                  width: width*0.5,
+                                  fit: BoxFit.fill,
+                                ),
+                              ]
+                          ),
+                        );
+                      },
+                      separatorBuilder: (BuildContext context, int index) =>  Container(
+                        width: width*0.1,
+                      ),
+                    )
+                  )
+
+                ]
+              )
+          ),
 //          Container(
 //            height: 500,
 //            color: Colors.amber[200],

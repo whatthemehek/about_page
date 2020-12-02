@@ -1,11 +1,14 @@
 part of 'main.dart';
 
-final List<String> names = <String>["Leah Crews, General Music Teacher", "Rebecca Gobel, Adaptive Music Teacher", "Bryonna Koppenhaver, Adaptive Music Teacher"];
-final List<String> pictures = <String>['graphics/L-Crews.jpg', 'graphics/R-Gobel.jpg', 'graphics/B-Koppenhaver.JPG'];
+final List<String> names = <String>["Leah Crews, General Music Teacher, ", "Rebecca Gobel, Adaptive Music Teacher", "Bryonna Koppenhaver, Adaptive Music Teacher", 'Laura Ziegler, Elementary Music Teacher'];
+final List<String> pictures = <String>['graphics/L-Crews.jpg', 'graphics/R-Gobel.jpg', 'graphics/B-Koppenhaver.JPG', 'graphics/L-Ziegler.png'];
 final List<String> quotes = <String>[
   "I have really enjoyed working with the Mehek Box. This is a great way for students to visually and aurally present rhythms to their students. The students enjoy manipulating rhythms and showing different durations with the boxes. It is a really great way to help them learn!",
   "Mehek is a brilliant upcoming entrepreneur. This is an amazing product to me. Our students can CREATE rhythmic patterns based on their current level to PRACTICE and PERFORM.",
-  "The Mehek Box is an innovative, fun, and engaging way for students to understand and practice rhythm while having something clear and concrete. There are different ways for teachers to use this box and many new ideas that Mehek is implementing on regularly. She is easy to work with and eager to learn how her Mehek Box can help students of many different abilities."];
+  "The Mehek Box is an innovative, fun, and engaging way for students to understand and practice rhythm while having something clear and concrete. There are different ways for teachers to use this box and many new ideas that Mehek is implementing on regularly. She is easy to work with and eager to learn how her Mehek Box can help students of many different abilities.",
+  "The Mehek Box has really helped my students visualize the different lengths of rhythms and has given them the confidence to use more complex and creative combinations of rhythms while composing. It is extremely user friendly and a great resource for both virtual and in-person learning."];
+final List<String> places = <String>["Bloomington Public Schools School District 87 ", "USD 259 – Wichita Public Schools, based at Levy Special Education Center", "USD 259 – Wichita Public Schools, based at Levy Special Education Center", "Great Lakes Academy Public Charter Elementary School"];
+
 
 class WherePage extends StatelessWidget{
   @override
@@ -78,6 +81,7 @@ class WherePage extends StatelessWidget{
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Text(names[index]),
+                      Text(places[index]),
                       Image(
                           image: AssetImage(pictures[index]),
                           width: width*0.15,

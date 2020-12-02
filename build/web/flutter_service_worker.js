@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "6e32b116e2c1f6b54b315acdd5007bcb",
+  "assets/AssetManifest.json": "8f66a13771296b3265309c409b74c0a4",
 "assets/FontManifest.json": "bdee00e386ed94edbe6b1154823cc4cd",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "assets/fonts/Pacific-Northwest-Rough.ttf": "f4d034a68dd32b73a0d195f2d6677702",
@@ -21,9 +21,12 @@ const RESOURCES = {
 "assets/graphics/J-Crnko.jpg": "ebc9707eb3fc36c4e3cab2ed04cb8c8c",
 "assets/graphics/K-McCord.jpg": "de39e03b09a395a83ea0b2ab6919bad3",
 "assets/graphics/L-Crews.jpg": "36dbfbac8834347a66da7093a1090526",
+"assets/graphics/L-Ziegler.png": "aba95aeaed7e80741cda1606aa432909",
 "assets/graphics/Mehek-Box-Icon.jpeg": "17855cb332f16bb84c0854d32d728023",
 "assets/graphics/R-Gobel.jpg": "b334b842284630582d940c3bf31b9558",
 "assets/graphics/Red-Image.png": "52cbfc6e91dc5b44d490ead94ae478d9",
+"assets/graphics/Screenshot-1.png": "1d10c1b9616f60f426fe350ee8d6a3e5",
+"assets/graphics/Screenshot-2.png": "7e60a9edb4a590a38f893d80b3602543",
 "assets/graphics/Slide-One.png": "2079352031802fd9739c7d81d4d5d278",
 "assets/graphics/Slide-Three.png": "e8411e2568c800bf89ac0289c159cf82",
 "assets/graphics/Slide-Two.png": "f8c3efb597c7c56681f2f781236eff80",
@@ -42,9 +45,9 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "37d7a9079d8a19c6a80ecc3bb5828f00",
 "icons/Icon-512.png": "4e7d1a74f614d8a76f5f7ee5fd77b4b4",
-"index.html": "8b247d34894880e9653f5594fb7d0a0b",
-"/": "8b247d34894880e9653f5594fb7d0a0b",
-"main.dart.js": "6da5d8c58e2f4292fe73a6b7f4ef3ae0",
+"index.html": "2790b5efdb2ffe93d266856bfd7fa2ea",
+"/": "2790b5efdb2ffe93d266856bfd7fa2ea",
+"main.dart.js": "df73f5a457132f11d842a2f24c7f464d",
 "manifest.json": "861bdb86d4dc27e7c5536408a5f9a40c"
 };
 
