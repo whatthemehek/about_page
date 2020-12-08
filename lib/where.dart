@@ -54,8 +54,7 @@ class WherePage extends StatelessWidget{
                                 "\n    - Wichita, Kansas "
                                 "\n    - Seattle, Washington"
                                 "\n    - Bloomington, Illinois"
-                                "\n    - Chicago, Illinois"
-                                "\n    - Arlington, Virginia",
+                                "\n    - Chicago, Illinois",
                                 textAlign: TextAlign.left,
                                 style: TextStyle(
                                   fontSize: 16,
