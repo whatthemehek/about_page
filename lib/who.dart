@@ -43,7 +43,7 @@ class WhoPage extends StatelessWidget{
                             Container (
                               width: width*0.4,
                               child: Text (
-                                "I am a high school senior at the Overlake School, interested in technology, product design, and software development! I have a passion for universal design, especially in the field of music education, which led me to develop my innovative tool, the Mehek Box. I'm also active in social justice work at Overlake, leading the IMPACT Club to write anti-racism webinars, push for curriculum reform, and bring a focus on cultural competency into faculty hiring. I hope to continue working on socially-conscious, design-forward projects, and keep learning! ",
+                                "I am a freshman at the Massachusetts Institute of Technology, interested in software development, accessible technology, and creating interactive experiences. I have a passion for universal design, especially in the field of music education, which led me to develop my innovative tool, the Mehek Box. In high school, I was social justice work, leading the IMPACT Club to write anti-racism webinars, push for curriculum reform, and bring a focus on cultural competency into faculty hiring. Now, at MIT, I am applying that same social focus in AR/VR Club and my research in the MIT Immersion Lab. I hope to continue working on socially-conscious, design-forward projects, and ultimately, keep learning. ",
                                 textAlign: TextAlign.left,
                                 style: TextStyle(
                                   fontSize: 16,
