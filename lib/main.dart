@@ -254,7 +254,7 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
 
 
 _launchURL() async {
-  const url = 'https://app.mehekbox.com/#/measure';
+  const url = 'http://appmehekbox.netlify.app/#/measure';
   if (await canLaunch(url)) {
     await launch(url);
   } else {
