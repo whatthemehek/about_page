@@ -175,6 +175,7 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           AppBar(
+            backgroundColor: Colors.white,
             title: IconButton(
                 iconSize: 175,
                 icon: Image(image: AssetImage('graphics/Title-Logo-Resized.png')),
@@ -187,29 +188,33 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
               ButtonBar (
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    FlatButton(
+                    TextButton(
                       child: new Text('WHO'),
                       onPressed: navigate(context, '/who'),
                     ),
-                    FlatButton(
+                    TextButton(
                       child: Text('WHAT'),
                       onPressed: navigate(context, '/what'),
                     ),
-                    FlatButton(
+                    TextButton(
                       child: Text('WHERE'),
                       onPressed: navigate(context, '/where'),
                     ),
-                    FlatButton(
+                    TextButton(
                       child: Text('WHY'),
                       onPressed: navigate(context, '/why'),
                     ),
-                    RaisedButton(
+                    ElevatedButton(
                       onPressed: _launchURL,
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-                      padding: const EdgeInsets.all(0.0),
+                      style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.zero, // let the Ink/Container handle internal padding
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                      ),
                       child: Ink(
                         decoration: const BoxDecoration(
-                          gradient:LinearGradient(
+                          gradient: LinearGradient(
                             colors: <Color>[
                               Color(0xFF0D47A1),
                               Color(0xFF1976D2),
@@ -219,7 +224,10 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
                         child: Container(
-                          constraints: const BoxConstraints(minWidth: 88.0, minHeight: 36.0), // min sizes for Material buttons
+                          constraints: const BoxConstraints(
+                            minWidth: 88.0,
+                            minHeight: 36.0,
+                          ), // min sizes for Material buttons
                           alignment: Alignment.center,
                           child: const Text(
                             'APP',
@@ -230,7 +238,7 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
                           ),
                         ),
                       ),
-                    ),
+                    )
                   ]
               ),
             ],
